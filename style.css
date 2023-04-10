@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+
+/* header */
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header .menubar {
+  height: 40px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menubar span {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+header .menubar :nth-child(2) {
+  width: 30px;
+}
+
+/* welcome page */
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://cdn.da.org.za/wp-content/uploads/2023/02/11114518/7C8A1F08-46ED-401B-B9D0-B2C9483CAD5F.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.welcome div > p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.welcome article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome article > h1 {
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Rubik Pixels', sans-serif;
+  text-shadow: 1px 1px 1px yellow;
+}
+
+.welcome article :nth-child(2) {
+  padding: 5px 0;
+  font-size: 24px;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.welcome article :nth-child(3) {
+  font-size: 18px;
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+/* continue button */
+
+.continue {
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+  padding: 10px 75px;
+  border-radius: 20px;
+  border: none;
+  position: absolute;
+  bottom: 15px;
+}
+
+/* first article */
+.article {
+  position: relative;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.article_image {
+  height: 40vh;
+  width: 100%;
+  background-image: url('https://www.dailymaverick.co.za/wp-content/uploads/2023/02/od-aka-photoessay-MAIN-1.jpg?resize=1536,768');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.article article {
+  color: black;
+  background-color: whitesmoke;
+  height: 80vh;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.article article :nth-child(1) {
+  border-left: 3px solid rgb(37, 175, 24);
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.article article :nth-child(2) {
+  font-size: 22px;
+}
