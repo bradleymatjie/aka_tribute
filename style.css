@@ -352,3 +352,7 @@ body {
   align-items: center;
   background-color: aliceblue;
 }
+
+.finish p {
+  color: black;
+}

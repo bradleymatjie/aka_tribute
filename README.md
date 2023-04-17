@@ -1,5 +1,5 @@
 # AKA TRIBUTE
-[DEMO LINK](https://bradleymatjie.github.io/aka_tribuite/)
+[DEMO LINK](https://bradleymatjie.github.io/aka_tribute/)
 
 ## Technologies
 Project is created with:
