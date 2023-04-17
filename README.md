@@ -1,4 +1,4 @@
-# Tasha's Restaurant
+# AKA TRIBUTE
 [DEMO LINK](https://bradleymatjie.github.io/aka_tribuite/)
 
 ## Technologies
