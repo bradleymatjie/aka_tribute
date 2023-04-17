@@ -7,41 +7,6 @@ body {
   overflow: hidden;
 }
 
-
-/* header */
-header {
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-}
-
-header .menubar {
-  height: 40px;
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.menubar span {
-  width: 40px;
-  height: 4px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-
-header .menubar :nth-child(2) {
-  width: 30px;
-}
-
 /* welcome page */
 
 .welcome {
