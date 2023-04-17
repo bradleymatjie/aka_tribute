@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   margin: 0;
   background-color: black;
@@ -112,51 +108,27 @@ header .menubar :nth-child(2) {
 .article {
   position: relative;
   height: 100vh;
-}
-
-.article_image {
-  height: 40vh;
   width: 100%;
   background-image: url('https://www.dailymaverick.co.za/wp-content/uploads/2023/02/od-aka-photoessay-MAIN-1.jpg?resize=1536,768');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 1;
 }
 
 .article article {
   color: black;
   background-color: whitesmoke;
-  height: 80vh;
-  width: 80%;
+  height: 65vh;
+  width: 50%;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0;
   padding: 0 10px;
+  border-radius: 30px 0 0 0;
+  z-index: 10;
 }
 
-
-@media (min-width: 700px) {
-  .article article {
-    width: 60%;
-    height: 75vh;
-  }
-}
-
-@media (min-width: 1000px) {
-  .article article {
-    width: 50%;
-    height: 70vh;
-  }
-}
-
-@media (min-width: 1280px) {
-  .article article {
-    width: 65%;
-    height: 60vh;
-  }
-}
 /* the date */
 .article article :nth-child(1) {
   border-left: 3px solid rgb(37, 175, 24);
@@ -170,56 +142,20 @@ header .menubar :nth-child(2) {
   font-size: 22px;
 }
 
-
-@media (min-width: 1280px) {
-  .article article :nth-child(2) {
-    font-size: 42px;
-  }
-}
-
 /* paragraph */
 .article article :nth-child(3) {
-  font-size: 13px;
+  font-size: 24px;
 }
 
-
-@media (min-width: 400px) {
-  .article article :nth-child(3) {
-    font-size: 16px;
-  }
-}
-
-
-@media (min-width: 700px) {
-  .article article :nth-child(3) {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .article article :nth-child(3) {
-    font-size: 18px;
-  }
-}
-
-
-@media (min-width: 1280px) {
-  .article article :nth-child(3) {
-    font-size: 32px;
-  }
-}
-
+/* CONTINUE BUTTON */
 .article article :nth-child(4) {
   text-decoration: none;
-  color: black;
   font-size: 16px;
   padding: 10px 50px;
   background-color:rgb(19, 19, 24);
   color: white;
   border-radius: 20px;
-  margin-top: 20px;
-  position: absolute;
-  bottom: 10px;
+  margin-top: 70px;
 }
 
 
@@ -236,4 +172,218 @@ header .menubar :nth-child(2) {
   top: 5px;
   left: 1px;
   padding: 10px 15px;
+}
+
+/* MUSIC SECTION */
+
+.music {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('https://cdn.24.co.za/files/Cms/General/d/377/d159593623704b30b0657b950a2d3651.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.nav {
+  text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  left: 5px;
+  width: 115px;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav .prev {
+  background-image: url('https://as1.ftcdn.net/v2/jpg/01/07/57/90/1000_F_107579055_aHGHkU1uWzN9CE7dRFqv0tpniipJYMnz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+}
+
+.nav .next {
+  background-image: url('https://as1.ftcdn.net/v2/jpg/01/07/57/90/1000_F_107579061_TNEgSAk1kQKi98h4HxFmZlNRNok4cvgw.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+}
+
+.biography {
+  width:  45%;
+  padding-left: 50px;
+  height: 500px;
+  color: gold;
+
+}
+
+.biography p {
+  font-size: 23px;
+  color: transparent;
+  text-shadow: 1px 1px 1px gold;
+}
+
+.biography h1 {
+  border-bottom: 3px solid whitesmoke;
+}
+
+.album-container {
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  padding-left: 150px;
+  gap: 25px;
+  max-width: 80%;
+  height: 500px;
+  overflow-x: scroll;
+}
+
+.album h2 {
+  font-size: 18px;
+}
+
+.album-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+.album-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.album-container::-webkit-scrollbar-thumb {
+  background-color: goldenrod;
+  border-radius: 10px;
+} */
+
+.album-container .album {
+  border: 1px solid white;
+  height: 350px;
+  width: 250px;
+  background: transparent;
+  backdrop-filter: blur(50px);
+}
+
+.album-container img {
+  width: 250px;
+  height: 250px;
+}
+
+.albums {
+ max-width: 50%;
+ position: absolute;
+ right: 4px; 
+}
+
+
+.album {
+  padding: 5px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  box-shadow: 1px 1px 15px 1px rgb(49, 47, 47);
+  color: rgb(236, 207, 75);
+  transition: 2s all;
+}
+
+.album:hover {
+  transform: scale(1.1);
+}
+
+/* FAMILY SECTION */
+
+.family {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@keyframes familyPics {
+  0%   {background-image: url('https://image-prod.iol.co.za/16x9/800/DJ-Zinhle-AKA-and-Kairo-Forbes-Picture-Instagram?source=https://xlibris.public.prod.oc.inl.infomaker.io:8443/opencontent/objects/ec92ccd5-55b3-5a06-b857-62829e27f334&operation=CROP&offset=0x74&resize=1080x606');}
+  25%  {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrD9Ra7hHXWB2RwCbCkZYVce1TbhPHVTfj8is6ikXKNgJv6sAUtzWr4NQn1iWArizvv5s&usqp=CAU');}
+  50%  {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrPkMt4xXdmK-Dk-zFCouwRDhxlkMQPuDHyA&usqp=CAU');}
+  74%  {background-image: url('https://fakazanews.com/wp-content/uploads/2020/06/AKA-DJ-Zinhle-kairo.jpg');}
+  100% {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP3iNh4Sb-GYkpZsimjNJMAL9dR48bjtRu_A&usqp=CAU');}
+}
+
+/* The element to apply the animation to */
+
+.family-image {
+  width: 50%;
+  background-image: url('https://fakazanews.com/wp-content/uploads/2020/06/AKA-DJ-Zinhle-kairo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  transition: 1s;
+}
+
+.family-image:hover {
+  animation-name: familyPics;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.family-text {
+  width: 40%;
+  padding-right: 20px;
+}
+
+.family-text p {
+  font-size: 1.3rem;
+}
+
+.family-text h2 {
+  font-size: 2rem;
+  border-bottom: 5px solid orange;
+}
+
+.nav-btns {
+  position: absolute;
+  bottom: 25px;
+  right: 5px; 
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+  background-color: turquoise;
+}
+
+/* FINISH SECTION */
+
+.finish {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
 }

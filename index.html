@@ -8,22 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- <header>
-    <div class="menubar">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="#welcome"></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </nav>
-  </header> -->
-
   <main>
     	<section class="welcome" id="Welcome">
         <div>
@@ -40,8 +24,12 @@
 
       <section class="article" id="article">
         <div class="article_image">
+
         </div>
-        <a href="" class="backToWelcome" id="backToWelcome">Back</a>
+        <div class="nav">
+          <a href="#Welcome" class="prev"></a>
+          <a href="#music" class="next"></a>
+        </div>
         <article>
           <p>Mon, 10 April 2023</p>
           <h2>AKA: slain South African rapper was a once-in-a-generation pop culture sensation</h2>
@@ -56,8 +44,106 @@
               Durban, on Friday. The rapper had only recently celebrated his 35th birthday. 
               His newest album, Mass Country, was set for release on 24 February.
           </p>
-          <a href="#music_legacy" class="continue2">Continue</a>
+          <a href="#music" class="continue2">Continue</a>
         </article>
+      </section>
+
+      <section class="music" id="music">
+        <div class="nav">
+          <a href="#article" class="prev"></a>
+          <a href="#family" class="next"></a>
+        </div>
+        <div class="biography">
+          <h1>MUSIC HISTORY</h1>
+          <p>Kiernan Jarryd Forbes (28 January 1988 – 10 February 2023),
+              known professionally as AKA, was a South African rapper, 
+              record producer and businessman. Born in Cape Town and raised
+              in Johannesburg, Forbes gained recognition after releasing his
+              single "Victory Lap" from his debut studio album, Altar Ego (2011). He was one of the most popular South African musicians of his era and the
+              greatest selling South African hip hop artist of all-time.
+              Forbes continued his success by releasing studio albums including Levels (2014),
+              a collaborative album with Anatii titled Be Careful What You Wish For (2017), Touch My Blood
+              (2018) and his final album, Mass Country (2023).          
+          </p>
+        </div>
+
+        <div class="albums">
+          <div class="album-container">
+            <div class="album">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/en/6/6a/AKA_-_Altar_Ego.png" 
+                alt="album cover" 
+              >
+              <h2>ALTER EGO</h2>
+              <p>Released: 23 August 2011</p>
+            </div>
+
+            <div class="album">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/en/1/17/AKA_Levels.jpg" 
+                alt="album cover" 
+              >
+              <h2>LEVELS</h2>
+              <p>Released: 30 June 2014</p>
+            </div>
+
+            <div class="album">
+              <img 
+                src="data:image/jpeg;base64,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" 
+                alt="album cover" 
+              >
+              <h2>BCWYWF (WITH ANATII)</h2>
+              <p>Released: 28 July 2017</p>
+            </div>
+
+            <div class="album">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/en/9/9e/Touch_My_Blood.jpg" 
+                alt="album cover" 
+              >
+              <h2>TOUCH MY BLOOD</h2>
+              <p>Released: 15 June 2018</p>
+            </div>
+
+            
+            <div class="album">
+              <img 
+                src="https://i.scdn.co/image/ab67616d0000b27326f069fc2782a56891f5b6ae" 
+                alt="album cover" 
+              >
+              <h2>MASS COUNTRY</h2>
+              <p>Released:  24 February 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="family" id="family">
+        <div class="nav">
+          <a href="#Welcome" class="prev"></a>
+          <a href="#music" class="next"></a>
+        </div>
+
+        <div class="family-image">
+        </div>
+        <div class="family-text">
+          <h2>FAMILY</h2>
+          <p>
+            DJ Zinhle (Ntombezinhle Jiyane) was
+            AKA's girlfriend for three years before 
+            breaking up and rekindling their love later. 
+            They met in 2012, and she gave birth to their daughter, 
+            <strong>Kairo Olwethu Forbes</strong>, on 8th July 2015. AKA's daughter is 
+            seven years old now but will celebrate her eighth birth date in July 2023.
+          </p>
+          <div class="nav-btns">
+            <a href="#Welcome" class="btn btn-start_over">Start Over</a><a href="#finish" class="btn btn-finsh">Finish</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="finish" id="finish">
+        Thank you for visiting.
       </section>
   </main>
 
