@@ -17,22 +17,26 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   color: whitesmoke;
+  position: relative;
 }
 
 .welcome div > p {
   font-size: 18px;
-  margin-bottom: 30px;
+  position: relative;
+  bottom: 50px;
 }
 
 .welcome article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  position: relative;
+  top: 100px;
 }
 
 .welcome article > h1 {
@@ -65,8 +69,13 @@ body {
   padding: 10px 75px;
   border-radius: 20px;
   border: none;
-  position: absolute;
-  bottom: 15px;
+  transition: .5s all ease-in;
+}
+
+.continue:hover {
+  background-color:aliceblue;
+  box-shadow: inset -10px -10px 10px #f6f6f6, inset 10px 10px 10px #e8e8e8;
+  color: #252525;
 }
 
 /* first article */
@@ -121,22 +130,13 @@ body {
   color: white;
   border-radius: 20px;
   margin-top: 70px;
+  transition: .5s all;
 }
 
-
-/* back button to welcome page */
-
-.backToWelcome {
-  text-decoration: none;
-  color: white;
-  border-top: 1px solid white;
-  border-left: 1px dotted white;
-  border-bottom: 1px solid white;
-  position: absolute;
-  z-index: 10;
-  top: 5px;
-  left: 1px;
-  padding: 10px 15px;
+.article article :nth-child(4):hover {
+  background-color:orangered;
+  box-shadow: 1px 1px 5px 1px #252525;
+  color: #f5f5f5;
 }
 
 /* MUSIC SECTION */
@@ -170,23 +170,23 @@ body {
 .nav .prev {
   background-image: url('https://as1.ftcdn.net/v2/jpg/01/07/57/90/1000_F_107579055_aHGHkU1uWzN9CE7dRFqv0tpniipJYMnz.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
   background-position: center;
   border: 1px solid white;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 60%;
 }
 
 .nav .next {
   background-image: url('https://as1.ftcdn.net/v2/jpg/01/07/57/90/1000_F_107579061_TNEgSAk1kQKi98h4HxFmZlNRNok4cvgw.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
   background-position: center;
   border: 1px solid white;
-  width: 50px;
-  height: 50px;
-  border-radius: 60%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .biography {
@@ -347,11 +347,16 @@ body {
 .finish {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+  background-color: whitesmoke;
 }
 
-.finish p {
-  color: black;
+.finish > div {
+  background-color: #f5f5f5;
+  box-shadow: inset -10px -10px 10px #f6f6f6, inset 10px 10px 10px #e8e8e8;
+  padding: 5px 15px;
+  color: #252525;
 }
+
